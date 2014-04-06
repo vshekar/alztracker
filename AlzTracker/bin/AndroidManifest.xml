@@ -24,7 +24,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            
         </activity>
+        <activity android:name="com.example.alztracker.OptionsMenu"
+            ></activity>
+        <activity android:name="com.example.alztracker.Track"></activity>
+        
+        
     </application>
 
 </manifest>
