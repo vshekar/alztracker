@@ -42,6 +42,7 @@ import org.json.JSONObject;
 	final Context context = this;
 	Button settingsButton;
 	Button startTracking;
+	Button reminderButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +81,19 @@ import org.json.JSONObject;
    					}
    				}
            		);
+            
+            reminderButton = (Button)findViewById(R.id.buttonReminder);
+            reminderButton.setOnClickListener(
+            		new View.OnClickListener() {
+      					
+       					@Override
+       					public void onClick(View rootView) {
+       						
+       						startActivity(new Intent(context, BrowseReminderActivity.class));
+       					}
+       				}
+            		);
+            
         	
          
         
@@ -112,21 +126,9 @@ import org.json.JSONObject;
     /**
      * A placeholder fragment containing a simple view.
      */
-    public class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
- 
-            
-            return rootView;
-        }
+   
     }
-  }
+  
 
 
 

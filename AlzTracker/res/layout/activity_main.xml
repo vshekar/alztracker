@@ -15,15 +15,6 @@
         android:text="@string/hello_world" />
 
     <Button
-        android:id="@+id/buttonStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="76dp"
-        android:text="Start Tracking" />
-
-    <Button
         android:id="@+id/buttonSettings"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -31,5 +22,23 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="33dp"
         android:text="@string/settings_button" />
+
+    <Button
+        android:id="@+id/buttonReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/buttonStart"
+        android:layout_below="@+id/buttonStart"
+        android:text="View/Edit Reminders" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonSettings"
+        android:text="Start Tracking" />
 
 </RelativeLayout>
